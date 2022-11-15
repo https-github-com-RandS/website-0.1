@@ -41,7 +41,10 @@ a {
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-
+    user-select:none;
+}
+a:hover {
+    color: rgb(160, 160, 160);
 }
 .header_inner {
     max-width: 1300px;
@@ -51,13 +54,18 @@ a {
 .title_logo{
     margin-bottom: 25px;
     max-width: 500px;
+    user-select:none;
+    pointer-events: none;
 }
 .title_description{
     max-width: 600px;
+    user-select:none
 }
 .title{
     display: flex;
     justify-content: flex-end;
+    z-index: ;
+    /* position: fixed; */
 
 }
 .title_inner{
@@ -70,3 +78,69 @@ a {
 .p_title_description{
     color: #FFFFFF;
 }
+
+/* СТИЛИ ДЛЯ СЛАЙДЕРА */
+.slider {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.slider_inner {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider_carousel {
+    position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 30s slider_inner-ani linear alternate infinite;
+}
+
+.slider_carousel figure {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+}
+
+.slider_carousel img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/* Если что, я в этой хуйне сам не разбираюсь */
+@keyframes slider_inner-ani {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ ДЛЯ СЛАЙДЕРА */
