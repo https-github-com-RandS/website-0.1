@@ -10,31 +10,53 @@
     <link rel="icon" type="image/png" href="../website-0.1/images/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Bushido-Fish</title>
 </head>
 
 <body>
     <div class="header">
-        <div class="slider">
-            <aside class="slider_inner">
-                <div class="slider_carousel">
-                    <figure><img src="../website-0.1/images/sliderImages/img1.png" alt="">                 
-                    </figure>
-                    <figure><img src="../website-0.1/images/sliderImages/img2.png" alt="">                    
-                    </figure>
-                    <figure><img src="../website-0.1/images/sliderImages/img3.png" alt="">                  
-                    </figure>
-                    <figure><img src="../website-0.1/images/sliderImages/img4.png" alt="">                   
-                    </figure>
-                    <figure><img src="../website-0.1/images/sliderImages/img5.png" alt="">                   
-                    </figure>
+        <!-- РАЗМЕТКА СЛАЙДЕРА -->
+        <section id="slider_bl">
+            <div class="wrapper">
+                <input checked type=radio name="slider" id="slide1" />
+                <input type=radio name="slider" id="slide2" />
+                <input type=radio name="slider" id="slide3" />
+                <input type=radio name="slider" id="slide4" />
+                <div class="slider-wrapper">
+                    <div class=inner>
+                        <article>
+                            <img src="../website-0.1/images/sliderImages/img1.png" />
+                        </article>
+                        <article>
+                            <img src="../website-0.1/images/sliderImages/img2.png" />
+                        </article>
+                        <article>
+                            <img src="../website-0.1/images/sliderImages/img3.png" />
+                        </article>
+                        <article>
+                            <img src="../website-0.1/images/sliderImages/img4.png" />
+                        </article>
+                        <article>
+                            <img src="../website-0.1/images/sliderImages/img5.png" />
+                        </article>
+                    </div>
                 </div>
-            </aside>
-        </div>
+                <div class="slider-dot-control">
+                    <label for=slide1></label>
+                    <label for=slide2></label>
+                    <label for=slide3></label>
+                    <label for=slide4></label>
+                </div>
+            </div>
+        </section>
+        <!-- КОНЕЦ РАЗМЕТКИ СЛАЙДЕРА -->
         <div class="header_inner">
             <div style="padding-top: 15px">
+                <!-- НАВИГАЦИОННАЯ ПАНЕЛЬ -->
                 <div class="navbar">
                     <div class="logo">
                         <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D1%80%D0%B8%D0%B8">
@@ -82,32 +104,39 @@
                         </div>
                     </div>
                 </div>
+                <!-- КОНЕЦ НАВИГАЦИОННОЙ ПАНЕЛИ -->
             </div>
+            <!-- ЗАГОЛОВОК СТРАНИЦЫ BUSHIDO-FISH -->
             <div class="title">
                 <div class="title_inner">
                     <div class="title_logo">
                         <img src="../website-0.1/images/header_title.png" alt="" width="600px">
                     </div>
+                    <!-- А ЭТО ЕГО ОПИСАНИЕ -->
                     <div class="title_description">
-                        <p class="p_title_description">Asian restaurant chain. Restaurants are located even in the most remote corners of the country. The gates of our restaurants are waiting for you at any time of the day, wherever you are, wherever you come from.</p>
+                        <p class="p_title_description">Asian restaurant chain. Restaurants are located even in the most
+                            remote corners of the country. The gates of our restaurants are waiting for you at any time
+                            of the day, wherever you are, wherever you come from.</p>
                     </div>
+                    <!-- КОНЕЦ ОПИСАНИЯ -->
                 </div>
             </div>
-    </div>
-    <div class="about">
-        <div class="logo_about">
-            <div class="logo_about_inner">
-
-            </div>
         </div>
-        <div class="about_title">
-            <div class="about_title_inner">
-                <div class="about_description"></div>
-                <div class="button"></div>
-            </div>
-        </div>
+        <!-- НАЧАЛО СЛЕДУЮЩЕГО БЛОКА -->
+        <div class="about">
+            <div class="logo_about">
+                <div class="logo_about_inner">
 
-    </div>
+                </div>
+            </div>
+            <div class="about_title">
+                <div class="about_title_inner">
+                    <div class="about_description"></div>
+                    <div class="button"></div>
+                </div>
+            </div>
+
+        </div>
 </body>
 
 </html>
